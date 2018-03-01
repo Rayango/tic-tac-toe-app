@@ -1,0 +1,97 @@
+html, body {
+  height: 100%;
+}
+
+#container {
+  height: 100%;
+  /*display: flex;
+  justify-content: center; 
+  align-items: center; */
+  display: grid;
+  grid-gap: 10px 10px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#header {
+  grid-column: 2 / 3;
+}
+
+#board {
+  /*text-align: center;*/
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  height: 400px;
+  width: 400px;
+  border: solid black 2px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#board > #topLeft {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  border: solid black 2px;
+}
+
+#board > #topMid {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  border: solid black 2px;
+}
+
+#board > #topRight {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  border: solid black 2px;
+}
+
+#board > #midLeft {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  border: solid black 2px;
+}
+
+#board > #midMid {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  border: solid black 2px;
+}
+
+#board > #midRight {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  border: solid black 2px;
+}
+
+#board > #bottomLeft {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  border: solid black 2px;
+}
+
+#board > #bottomMid {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  border: solid black 2px;
+}
+
+#board > #bottomRight {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+  border: solid black 2px;
+}
+
+#playerOne {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+#playerTwo {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+}
+
