@@ -19,8 +19,11 @@ html, body {
   grid-column: 2 / 3;
 }
 
+h2 {
+  margin-bottom: 3%;
+}
+
 #board {
-  /*text-align: center;*/
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   height: 400px;
@@ -29,6 +32,11 @@ html, body {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+#board .cell {
+  font-size: 110px;
+  text-align: center;
 }
 
 #board > #topLeft {
@@ -88,10 +96,18 @@ html, body {
 #playerOne {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
+  text-align: center;
+}
+
+#playerOne > b, #playerTwo > b {
+  font-size: large;
 }
 
 #playerTwo {
   grid-row: 1 / 2;
   grid-column: 3 / 4;
+  text-align: center;
 }
+
+
 
