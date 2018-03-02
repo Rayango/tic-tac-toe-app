@@ -109,5 +109,13 @@ h2 {
   text-align: center;
 }
 
+#newGame {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  font-size: 20px;
+  text-align: center;
+  align-self: start;
+}
+
 
 

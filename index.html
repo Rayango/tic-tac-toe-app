@@ -9,10 +9,6 @@
 <body>
   <div id="container">
     <div id="header">
-<!--       <h1 class="playerOneTurn"> Player One's Turn! </h1>
-      <h1 class="playerTwoTurn"> Player Two's Turn! </h1>
-      <h1 class="playerOneWins"> Player One Wins! </h1>
-      <h1 class="playerTwoWins"> Player Two Wins! </h1> -->
     </div>
     <div id="board">
       <div class="cell" id="topLeft"></div>
@@ -27,12 +23,15 @@
     </div>
     <div id="playerOne">
       <h2> Player One (x) </h2>
-      <b><span> Score: 0 </span></b>
+      <b><span> Score: </span></b>
+      <b><span id="playerOneScore"> 0 </span></b>
     </div>
     <div id="playerTwo">
       <h2> Player Two (o) </h2>
-      <b><span> Score: 0 </span></b>
+      <b><span> Score: </span></b>
+      <b><span id="playerTwoScore"> 0 </span></b>
     </div>
+    <Button id="newGame" onClick="handlers.startNewGame()"> New Game </Button>
   </div>  
 </body>
 
