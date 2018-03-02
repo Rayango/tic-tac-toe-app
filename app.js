@@ -1,5 +1,3 @@
-// var sign = prompt("What's your sign?");
-
 let ticTacToe = {
   score: {playerOne: 0, playerTwo: 0},
   gameState: true,
